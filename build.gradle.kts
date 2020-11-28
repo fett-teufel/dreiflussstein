@@ -30,6 +30,7 @@ kotlin {
     }
     js {
         browser {
+            useCommonJs()
             binaries.executable()
             webpackTask {
                 cssSupport.enabled = true
@@ -38,7 +39,6 @@ kotlin {
                 cssSupport.enabled = true
             }
             testTask {
-                enabled = false
                 useKarma {
                     useChromeHeadless()
                     webpackConfig.cssSupport.enabled = true

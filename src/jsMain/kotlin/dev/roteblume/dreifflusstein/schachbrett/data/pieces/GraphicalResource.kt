@@ -1,6 +1,6 @@
 package dev.roteblume.dreifflusstein.schachbrett.data.pieces
 
-import dev.roteblume.dreifflusstein.schachkbrett.data.BoardSide
+import dev.roteblume.dreifflusstein.model.BoardSide
 
 enum class GraphicalResource(val url: String) {
     LightSquare(""),

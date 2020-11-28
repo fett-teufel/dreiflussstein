@@ -1,6 +1,6 @@
-package dev.roteblume.dreifflusstein.schachkbrett.states
+package dev.roteblume.dreifflusstein.schachbrett.states
 
-import dev.roteblume.dreifflusstein.schachkbrett.data.Player
+import dev.roteblume.dreifflusstein.model.Player
 import dev.roteblume.dreifflusstein.schachkbrett.data.pieces.Piece
 import react.RState
 

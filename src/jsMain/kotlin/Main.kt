@@ -1,9 +1,11 @@
-import dev.roteblume.dreifflusstein.schachkbrett.Application
+import dev.roteblume.dreifflusstein.schachbrett.Application
 import kotlinx.browser.document
 import react.dom.render
 
 fun main() {
-    render(document.getElementById("root")) {
-        child(Application::class) {}
+    document.getElementById("root")?.let {
+        render(it){
+            child(Application::class){}
+        }
     }
 }

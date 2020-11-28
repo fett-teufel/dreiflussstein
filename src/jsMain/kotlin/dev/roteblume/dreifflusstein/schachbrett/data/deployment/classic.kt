@@ -1,6 +1,6 @@
 package dev.roteblume.dreifflusstein.schachbrett.data.deployment
 
-import dev.roteblume.dreifflusstein.schachkbrett.data.Player
+import dev.roteblume.dreifflusstein.model.Player
 import dev.roteblume.dreifflusstein.schachkbrett.data.pieces.Piece
 import dev.roteblume.dreifflusstein.schachbrett.data.pieces.*
 

@@ -1,15 +1,13 @@
-package dev.roteblume.dreifflusstein.schachkbrett
+package dev.roteblume.dreifflusstein.schachbrett
 
 import dev.roteblume.dreifflusstein.schachbrett.components.board.board
-import dev.roteblume.dreifflusstein.schachkbrett.data.BoardSide
-import dev.roteblume.dreifflusstein.schachkbrett.data.Player
-import dev.roteblume.dreifflusstein.schachkbrett.states.ApplicationState
+import dev.roteblume.dreifflusstein.model.BoardSide
+import dev.roteblume.dreifflusstein.model.Player
+import dev.roteblume.dreifflusstein.schachbrett.states.ApplicationState
 import dev.roteblume.dreifflusstein.schachbrett.data.deployment.initialClassicChessBoard
 import react.RBuilder
 import react.RComponent
 import react.RProps
-import styled.styledDiv
-import styled.styledP
 
 class Application : RComponent<RProps, ApplicationState>() {
     override fun ApplicationState.init() {

@@ -1,7 +1,7 @@
 package dev.roteblume.dreifflusstein.testify.api
 
-import dev.roteblume.dreifflusstein.schachkbrett.data.BoardSide
-import dev.roteblume.dreifflusstein.schachkbrett.data.Player
+import dev.roteblume.dreifflusstein.model.BoardSide
+import dev.roteblume.dreifflusstein.model.Player
 
 interface Players {
     fun next(side: BoardSide): Player

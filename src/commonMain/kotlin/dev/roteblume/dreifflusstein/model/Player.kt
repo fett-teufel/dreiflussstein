@@ -1,4 +1,4 @@
-package dev.roteblume.dreifflusstein.schachkbrett.data
+package dev.roteblume.dreifflusstein.model
 
 enum class BoardSide {
     WHITE,
