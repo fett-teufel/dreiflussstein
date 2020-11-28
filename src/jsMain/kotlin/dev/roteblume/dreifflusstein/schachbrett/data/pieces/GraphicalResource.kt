@@ -1,4 +1,6 @@
-package dev.roteblume.dreifflusstein.schackbrett.data.pieces
+package dev.roteblume.dreifflusstein.schachbrett.data.pieces
+
+import dev.roteblume.dreifflusstein.schachkbrett.data.BoardSide
 
 enum class GraphicalResource(val url: String) {
     LightSquare(""),
@@ -26,5 +28,8 @@ enum class PieceResource(private val white: GraphicalResource, private val black
     Pawns(GraphicalResource.WhitePawn, GraphicalResource.BlackPawn),
     Square(GraphicalResource.LightSquare, GraphicalResource.DarkSquare);
 
-    fun bySide(side: Boolean) = if (side) white else black
+    fun bySide(side: BoardSide): GraphicalResource = when (side) {
+        BoardSide.WHITE -> white
+        else -> black
+    }
 }

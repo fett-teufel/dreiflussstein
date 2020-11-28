@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpack
+import org.jetbrains.kotlin.gradle.utils.addExtendsFromRelation
 
 plugins {
     kotlin("multiplatform") version "1.4.10"
@@ -37,6 +38,7 @@ kotlin {
                 cssSupport.enabled = true
             }
             testTask {
+                enabled = false
                 useKarma {
                     useChromeHeadless()
                     webpackConfig.cssSupport.enabled = true
@@ -81,6 +83,7 @@ kotlin {
         }
         val jsTest by getting {
             dependencies {
+
                 implementation(kotlin("test-js"))
             }
         }
